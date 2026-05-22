@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Clientes</title>
+</head>
+<body>
+    <form>
+ <!-- formulario dos nomes, etc.-->
+
+    <h3>Formulario dos Dados Pessoais</h3>
+
+    <label>Nome Completo:</label>
+    <input type="text" required><br>
+
+    <label>E-mail:</label>
+    <input type="gmail" required><br>
+
+    <label>Senha:</label>
+    <input type="password" required><br>
+    
+    <label>Data de nascimento:</label>
+    <input type="date" required><br>
+
+    <label>CPF:</label>
+    <input type="text"
+           pattern="[0-9]{11}"
+           placeholder="somente números"
+           required>
+     
+    <label>Numero de Telefone:</label>
+    <input type="text"
+           pattern="[0-9]{11}"
+           placeholder="somente números"
+           required>
+
+    <label>Nome da mãe:</label>
+    <input type="text" required>
+
+    <label>Nome do pai:</label>
+    <input type="text" required>
+
+    <label>Estado Civil:</label>
+    <select required>
+        <option value="">Selecione</option>
+            <option>Solteiro</option>
+            <option>Casado</option>
+            <option>União Estável</option>
+            <option>Separado</option>
+    </select>
+
+    
+
+
+    <!--Endereço do Cliente-->
+
+    <label>Rua:</label>
+    <input type="text" required>
+
+    <label>Numero:</label>
+    <input type="text" required>
+
+    <label>Bairro:</label>
+    <input type="text" required>
+
+    <label>Cidade:</label>
+    <input type="text" required>
+
+    <label>Estado:</label>
+    <select required>
+        <option value=""><selecione</option>
+        <option>Pernambuco</option>
+        <option>São Paulo</option>
+        <option>Rio de Janeiro</option>
+        <option>Bahia</option>
+    </select>
+
+    <label>Cep:</label>
+    <input type="text"
+         pattern="[0-9]{8}"
+         placeholder="somente números"
+         required>
+
+    
+    <label>Pais:</label>
+    <select required>
+        <option value=""><selecione</option>
+        <option>Brasil</option>
+        <option>Estados Unidos</option>
+        <option>Canadá</option>
+        <option>argentina</option>
+    </select>
+
+    <!--SEXO DO INDIVIDUO-->
+
+    <label>Sexo:</label>
+     
+
+
+
+
+
+
+
+     
+</body>
+</html>
