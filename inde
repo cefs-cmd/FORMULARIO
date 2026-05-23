@@ -13,33 +13,41 @@
 
     <label>Nome Completo:</label>
     <input type="text" required><br>
+    <button type="reset">Limpar Formulário</button>
 
     <label>E-mail:</label>
     <input type="gmail" required><br>
+    <button type="reset">Limpar Formulário</button>
 
     <label>Senha:</label>
     <input type="password" required><br>
+    <button type="reset">Limpar Formulário</button>
     
     <label>Data de nascimento:</label>
     <input type="date" required><br>
+    <button type="reset">Limpar Formulário</button>
 
     <label>CPF:</label>
     <input type="text"
            pattern="[0-9]{11}"
            placeholder="somente números"
            required>
+    <button type="reset">Limpar Formulário</button>
      
     <label>Numero de Telefone:</label>
     <input type="text"
            pattern="[0-9]{11}"
            placeholder="somente números"
            required>
+    <button type="reset">Limpar Formulário</button>
 
     <label>Nome da mãe:</label>
     <input type="text" required>
+    <button type="reset">Limpar Formulário</button>
 
     <label>Nome do pai:</label>
     <input type="text" required>
+    <button type="reset">Limpar Formulário</button>
 
     <label>Estado Civil:</label>
     <select required>
@@ -49,6 +57,7 @@
             <option>União Estável</option>
             <option>Separado</option>
     </select>
+    <button type="reset">Limpar Formulário</button>
 
     
 
@@ -57,15 +66,19 @@
 
     <label>Rua:</label>
     <input type="text" required>
+    <button type="reset">Limpar Formulário</button>
 
     <label>Numero:</label>
     <input type="text" required>
+    <button type="reset">Limpar Formulário</button>
 
     <label>Bairro:</label>
     <input type="text" required>
+    <button type="reset">Limpar Formulário</button>
 
     <label>Cidade:</label>
     <input type="text" required>
+    <button type="reset">Limpar Formulário</button>
 
     <label>Estado:</label>
     <select required>
@@ -75,12 +88,14 @@
         <option>Rio de Janeiro</option>
         <option>Bahia</option>
     </select>
+    <button type="reset">Limpar Formulário</button>
 
     <label>Cep:</label>
     <input type="text"
          pattern="[0-9]{8}"
          placeholder="somente números"
          required>
+    <button type="reset">Limpar Formulário</button>
 
     
     <label>Pais:</label>
@@ -91,172 +106,22 @@
         <option>Canadá</option>
         <option>argentina</option>
     </select>
+    <button type="reset">Limpar Formulário</button>
 
     <!--SEXO DO INDIVIDUO-->
 
-    <label>Sexo:</label>
+    <div class="radio-group">
+    <input type"radio" name="sexo" required>
+    <label>Masculino</label>
 
-    <!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro de Clientes</title>
+    <input type="radio" name="sexo">
+    <label>Feminino</label>
+    </div>
+    <button type="reset">Limpar Formulário</button>
 
-    <style>
-        body{
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            margin: 20px;
-        }
+    <!--TECNOLOGIAS-->
 
-        form{
-            background-color: white;
-            padding: 20px;
-            border-radius: 10px;
-            width: 700px;
-            margin: auto;
-        }
-
-        fieldset{
-            margin-bottom: 20px;
-            border: 2px solid #ccc;
-            padding: 15px;
-        }
-
-        legend{
-            font-weight: bold;
-        }
-
-        label{
-            display: block;
-            margin-top: 10px;
-        }
-
-        input, select, textarea{
-            width: 100%;
-            padding: 8px;
-            margin-top: 5px;
-        }
-
-        .radio-group,
-        .checkbox-group{
-            margin-top: 10px;
-        }
-
-        .radio-group input,
-        .checkbox-group input{
-            width: auto;
-        }
-
-        button{
-            padding: 10px 20px;
-            margin-top: 10px;
-            cursor: pointer;
-        }
-    </style>
-</head>
-
-<body>
-
-    <form>
-
-        <!-- DADOS PESSOAIS -->
-        <fieldset>
-            <legend>Dados Pessoais</legend>
-
-            <label>Nome Completo:</label>
-            <input type="text" required>
-
-            <label>E-mail:</label>
-            <input type="email" required>
-
-            <label>Senha:</label>
-            <input type="password" minlength="6" required>
-
-            <label>Data de Nascimento:</label>
-            <input type="date" required>
-
-            <label>CPF:</label>
-            <input type="text" 
-                   pattern="[0-9]{11}" 
-                   placeholder="Somente números"
-                   required>
-
-            <label>Telefone:</label>
-            <input type="tel" required>
-
-            <label>Nome da Mãe:</label>
-            <input type="text" required>
-
-            <label>Nome do Pai:</label>
-            <input type="text" required>
-
-            <label>Estado Civil:</label>
-            <select required>
-                <option value="">Selecione</option>
-                <option>Solteiro</option>
-                <option>Casado</option>
-                <option>União Estável</option>
-                <option>Separado</option>
-            </select>
-
-        </fieldset>
-
-        <!-- ENDEREÇO -->
-        <fieldset>
-            <legend>Endereço</legend>
-
-            <label>Rua:</label>
-            <input type="text" required>
-
-            <label>Número:</label>
-            <input type="number" required>
-
-            <label>Bairro:</label>
-            <input type="text" required>
-
-            <label>Cidade:</label>
-            <input type="text" required>
-
-            <label>Estado:</label>
-            <select required>
-                <option value="">Selecione</option>
-                <option>Pernambuco</option>
-                <option>São Paulo</option>
-                <option>Rio de Janeiro</option>
-                <option>Bahia</option>
-                <option>Ceará</option>
-            </select>
-
-            <label>CEP:</label>
-            <input type="text"
-                   pattern="[0-9]{8}"
-                   placeholder="Somente números"
-                   required>
-
-            <label>País:</label>
-            <input type="text" required>
-
-        </fieldset>
-
-        <!-- SEXO -->
-        <fieldset>
-            <legend>Sexo</legend>
-
-            <div class="radio-group">
-                <input type="radio" name="sexo" required>
-                <label>Masculino</label>
-
-                <input type="radio" name="sexo">
-                <label>Feminino</label>
-            </div>
-
-        </fieldset>
-
-        <!-- TECNOLOGIAS -->
-        <fieldset>
-            <legend>Tecnologias</legend>
+  <legend>Tecnologias</legend>
 
             <div class="checkbox-group">
                 <input type="checkbox"> HTML <br>
@@ -265,33 +130,23 @@
                 <input type="checkbox"> Python
             </div>
 
-        </fieldset>
 
-        <!-- COMENTÁRIOS -->
-        <fieldset>
-            <legend>Comentários</legend>
+    <!--Comentarios-->
 
-            <label>Observações:</label>
-            <textarea rows="5" required></textarea>
+    <legend>Comentarios</legend>
+    
+    <label>Observações:</label>
+    <textarea rows="5" required></textarea>
+    <button type="reset">Limpar Formulário</button>
 
-        </fieldset>
+    <button type="submit">Enviar Cadastro</button>
 
-        <!-- BOTÕES -->
-        <button type="submit">Enviar Cadastro</button>
-        <button type="reset">Limpar Formulário</button>
-
-    </form>
-
-</body>
-</html>
-     
+</head>
+<body>
+    
 
 
 
 
-
-
-
-     
-</body>
-</html>
+    
+    
